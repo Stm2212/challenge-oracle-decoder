@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+
+    <h1 class="titulo">Codigo Secreto</h1>
+
+  </header>
+
+  <main class="main">
+      <card class="card">
+          <h1>Mensaje a encriptar</h1>
+          <br>
+          <textarea class="input" id="input" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder=" solo letras minusculas, sin acento ni caracteres especiales..."></textarea>
+        <div class="botones">
+              <Button class="btn" id="button">Encriptar</Button>
+              <button class="btn" id="button2">Desencriptar</button>
+        </div>
+          
+
+      </card>
+
+      <card class="card">
+          <h1>Mensaje encriptada:</h1>
+          <br>
+          <textarea class="input" id="output" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder=" escriba algo aqui..."></textarea>
+        <div class="botones">
+          <button class="btn2" id="buttonCopiar" onclick="botonCopiar()">copiar</button>
+              
+        </div>
+          
+
+      </card>
+
+  </main>
+
+  <footer class="footer">
+
+  <p>Created by STM</p>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
